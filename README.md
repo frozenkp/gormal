@@ -1,27 +1,19 @@
+[![GoDoc](https://godoc.org/github.com/frozenkp/gormal?status.svg)](https://godoc.org/github.com/frozenkp/gormal)
+[![Go Report Card](https://goreportcard.com/badge/github.com/frozenkp/gormal)](https://goreportcard.com/report/github.com/frozenkp/gormal)
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+
 # gormal
 a go package for data normalization
 
-## TODO list
-- [ ] member function (interface and struct)
-  - [ ] Standard Score for []float64
-  - [ ] Standard Score for [][]float64 (data with multiple attributes)
-- [ ] function
-  - [ ] Standard Score for []float64
-  - [ ] Standard Score for [][]float64 (data with multiple attributes)
-
-### structure
-```go
-type CustomData struct{
-  RawData   Data
-}
-
-type Data interface{
-  Value(i, j int)float64
-  RowSize()int
-  ColSize()int
-}
-
-type DefaultData struct{
-  RawData   [][]float64
-}
+## Install
 ```
+go get github.com/frozenkp/gormal
+```
+
+## TODO list
+- member function (interface and struct)
+  - [*] Standard Score for []float64
+  - [*] Standard Score for [][]float64 (data with multiple attributes)
+- function
+  - [*] Standard Score for []float64
+  - [*] Standard Score for [][]float64 (data with multiple attributes)
