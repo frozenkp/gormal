@@ -7,7 +7,9 @@ import (
 	"github.com/montanaflynn/stats"
 )
 
-// StandardScoreSingle normalizes the first row (usually only one row).
+// StandardScoreSingle normalizes the first row with "Standard Score".
+//
+// (usually only one row in input)
 func (d CustomData) StandardScoreSingle() []float64 {
 	col := make([]float64, 0)
 	out := make([]float64, 0)
@@ -30,7 +32,7 @@ func (d CustomData) StandardScoreSingle() []float64 {
 	return out
 }
 
-// StandardScore normalizes every columns.
+// StandardScore normalizes every columns with "Standard Score".
 func (d CustomData) StandardScore() [][]float64 {
 	out := make([][]float64, d.RawData.RowSize())
 	for k := 0; k < len(out); k++ {
@@ -58,7 +60,9 @@ func (d CustomData) StandardScore() [][]float64 {
 	return out
 }
 
-// StandardScoreSingle normalizes the first row (usually only one row).
+// StandardScoreSingle normalizes the first row with "Standard Score".
+//
+// (usually only one row in input)
 func StandardScoreSingle(data []float64) []float64 {
 	col := make([]float64, 0)
 	out := make([]float64, 0)
@@ -81,7 +85,7 @@ func StandardScoreSingle(data []float64) []float64 {
 	return out
 }
 
-// StandardScore normalizes every columns.
+// StandardScore normalizes every columns with "Standard Score".
 func StandardScore(data [][]float64) [][]float64 {
 	out := make([][]float64, len(data))
 	if len(data) == 0 {

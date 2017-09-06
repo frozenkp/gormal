@@ -9,11 +9,3 @@ a go package for data normalization
 ```
 go get github.com/frozenkp/gormal
 ```
-
-## TODO list
-- member function (interface and struct)
-  - [*] Standard Score for []float64
-  - [*] Standard Score for [][]float64 (data with multiple attributes)
-- function
-  - [*] Standard Score for []float64
-  - [*] Standard Score for [][]float64 (data with multiple attributes)
